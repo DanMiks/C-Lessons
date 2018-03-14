@@ -3,8 +3,6 @@
 
 int main()
 {
-    std::cout << "dadad";
-
-
+    std::cout << "Hello, world";
     return 0;   
 }
