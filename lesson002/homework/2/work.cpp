@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
     double km = 1;
-    double m;
+    const double m = 12;
 
     cout << "Please,enter km ";
     cin >> km;
