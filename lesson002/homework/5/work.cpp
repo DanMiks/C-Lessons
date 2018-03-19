@@ -1,14 +1,27 @@
 //Упражнение 7 из книги
 
 // Прототип
-void printTime(int hours, int min);
 
-int main() {
+#include <iostream>
 
-    int h,m;
+using namespace std;
 
-    cin >> h >> m;
-
-    printTime(h, m);
+void printTime(int hours, int minutes)
+{
+    cout << "Time: " << hours << ":" << minutes << endl;
 }
 
+int main()
+{
+    int  hours;
+    int  minutes;
+    cout << "Enter the number of hours ";
+    cin >> hours;
+    cout << "Enter the number of minutes ";
+    cin >> minutes;
+ 
+    printTime(hours,minutes);
+    printTime(hours,minutes);
+    printTime(hours,minutes);
+    return 0;
+}
