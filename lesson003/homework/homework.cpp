@@ -21,11 +21,17 @@ using namespace std;
 
 int main()
 {
-    const long d = 86400, h = 3600, m = 60;
-    long s;
+    const long SECONDS_IN_DAY = 86400, SECONDS_IN_HOUR = 3600, SECONDS_IN_MIN = 60;
+    long sec;
     cout << "Enter the number of seconds : ";
-    cin >> s;
-    cout << s / d << " days " << s % d / h << " hours " << s % h / m << " minutes " << s % m << " seconds" << endl;
+    cin >> sec;
+
+    long days = sec / SECONDS_IN_DAY;
+    long hours = sec % SECONDS_IN_DAY / SECONDS_IN_HOUR;
+    long minutes = sec % SECONDS_IN_HOUR / SECONDS_IN_MIN;
+    long secRemainder = sec % SECONDS_IN_MIN;
+
+    cout << days << " days " << hours << " hours " << minutes << " minutes " << secRemainder << " seconds" << endl;
 
     return 0;
 }
