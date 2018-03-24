@@ -14,3 +14,18 @@
     38532 / 3600 = 10
     38532 % 3600 = 2532 секундо оставшиеся после час
 */
+#include <iostream>
+#include <climits>
+
+using namespace std;
+
+int main()
+{
+    const long d = 86400, h = 3600, m = 60;
+    long s;
+    cout << "Enter the number of seconds : ";
+    cin >> s;
+    cout << s / d << " days " << s % d / h << " hours " << s % h / m << " minutes " << s % m << " seconds" << endl;
+
+    return 0;
+}
